@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mary Jade S. Salvador | CLAD Through CTEL Portfolio</title>
+<meta name="description" content="CLAD Through CTEL portfolio of Mary Jade S. Salvador, University of California San Diego Division of Extended Studies.">
+<style>
+  :root{
+    color-scheme:dark;
+    --bg:#0c0c0c; --surface:#161616; --ink:#f4f4ee; --muted:#b9bdb0;
+    --brand:#39e075; --brand-dark:#0f7a35; --accent:#ffd60a; --line:#2e2e2e; --tint:#1d261f;
+    --radius:20px; --shadow:none;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:72px}
+  body{margin:0; background:var(--bg); color:var(--ink);
+       font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif; line-height:1.2; margin:0 0 .5em}
+  a{color:var(--brand)}
+  .skip{position:absolute; left:-999px; top:0; background:var(--accent); color:#fff; padding:.6rem 1rem; z-index:100}
+  .skip:focus{left:8px; top:8px}
+
+  /* header */
+  .hero{background:linear-gradient(135deg,var(--brand-dark),var(--brand)); color:#fff; padding:72px 20px 64px; text-align:center}
+  .hero .eyebrow{letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; opacity:.85; margin-bottom:14px}
+  .hero h1{font-size:clamp(2rem,6vw,3.4rem); margin-bottom:.25em}
+  .hero p{margin:.2em auto; max-width:46rem; opacity:.95}
+  .hero .meta{margin-top:18px; font-size:.95rem; opacity:.85}
+  .avatar{width:150px; height:150px; border-radius:50%; object-fit:cover; border:4px solid rgba(255,255,255,.8); margin:0 auto 18px; display:block; box-shadow:0 6px 24px rgba(0,0,0,.3)}
+  figure.shot{margin:12px 0 4px}
+  figure.shot img{width:100%; height:auto; border-radius:10px; border:1px solid var(--line); display:block}
+  figure.shot figcaption{font-size:.85rem; color:var(--muted); margin-top:6px}
+  .badge{display:inline-block; margin-top:22px; padding:.45rem 1rem; border:1px solid rgba(255,255,255,.45); border-radius:999px; font-size:.9rem}
+
+  /* nav */
+  nav{position:sticky; top:0; z-index:50; background:var(--surface); border-bottom:1px solid var(--line); box-shadow:var(--shadow)}
+  nav ul{list-style:none; margin:0 auto; padding:0 12px; max-width:1100px; display:flex; gap:4px; overflow-x:auto; white-space:nowrap}
+  nav a{display:block; padding:16px 14px; text-decoration:none; color:var(--ink); font-size:.92rem; font-weight:600; border-bottom:3px solid transparent}
+  nav a:hover,nav a:focus{color:var(--brand); border-color:var(--accent)}
+
+  main{max-width:1000px; margin:0 auto; padding:0 20px 80px}
+  section{padding-top:56px}
+  .section-head{border-left:6px solid var(--accent); padding-left:16px; margin-bottom:22px}
+  .section-head h2{font-size:clamp(1.6rem,4vw,2.2rem); margin:0}
+  .section-head .code{color:var(--muted); font-size:.9rem; margin-top:4px}
+  .lead{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:26px 28px; box-shadow:var(--shadow)}
+  .lead p{margin:0 0 1em} .lead p:last-child{margin:0}
+  h3.sub{font-size:1.15rem; color:var(--brand); margin:34px 0 14px; text-transform:uppercase; letter-spacing:.06em; font-family:system-ui,sans-serif}
+
+  /* cards */
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--shadow)}
+  .card h4{font-family:Georgia,serif; font-size:1.12rem; margin:6px 0 8px; line-height:1.3}
+  .card p{margin:0 0 .7em; font-size:.97rem}
+  .tag{display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+       background:var(--tint); color:var(--brand); padding:3px 10px; border-radius:999px}
+  .tag.project{background:#fdeadd; color:#a8400a}
+  @media (prefers-color-scheme: dark){ .tag.project{background:#3a2616; color:#ffb27a} }
+  .card.wide{grid-column:1/-1}
+
+  details{margin-top:10px; border-top:1px dashed var(--line); padding-top:10px}
+  summary{cursor:pointer; font-weight:600; color:var(--brand); font-size:.95rem}
+  summary:focus-visible,a:focus-visible{outline:3px solid var(--accent); outline-offset:2px}
+  details > *:not(summary){font-size:.96rem}
+
+  table{border-collapse:collapse; width:100%; margin:12px 0; font-size:.92rem}
+  th,td{border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top}
+  th{background:var(--tint)}
+  .table-wrap{overflow-x:auto}
+  ul.tight{margin:.4em 0 .8em; padding-left:1.2em} ul.tight li{margin:.25em 0}
+  blockquote{margin:14px 0; padding:10px 18px; border-left:4px solid var(--accent); background:var(--tint); border-radius:0 10px 10px 0}
+
+  .reflection p{margin:0 0 1em}
+  footer{border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:.9rem; padding:28px 20px 40px}
+  /* ===== Playful black / green / yellow theme ===== */
+  body{font-family:ui-rounded,"Nunito","Trebuchet MS","Segoe UI",system-ui,sans-serif}
+  h1,h2,h3,.card h4{font-family:ui-rounded,"Trebuchet MS","Segoe UI",system-ui,sans-serif; font-weight:800; letter-spacing:-.01em}
+  a{color:var(--accent)}
+
+  .hero{position:relative; overflow:hidden; background:var(--brand); color:#0b0b0b; padding:80px 20px 84px;
+        border-radius:0 0 50% 50% / 0 0 48px 48px}
+  .hero::before,.hero::after{content:""; position:absolute; border-radius:50%; z-index:0}
+  .hero::before{width:220px; height:220px; background:var(--accent); top:-70px; left:-60px}
+  .hero::after{width:150px; height:150px; background:#0b0b0b; bottom:-50px; right:6%}
+  .hero > *{position:relative; z-index:1}
+  .hero h1{font-size:clamp(2.2rem,7vw,4rem); text-shadow:3px 3px 0 var(--accent)}
+  .hero h1::after{content:" ✏️"; font-size:.6em}
+  .hero .eyebrow{display:inline-block; background:#0b0b0b; color:var(--accent); padding:6px 14px; border-radius:999px;
+                 opacity:1; font-weight:800; transform:rotate(-2deg)}
+  .hero .meta{opacity:.85; font-weight:700}
+  .avatar{border:5px solid var(--accent)}
+  .badge{background:var(--accent); color:#0b0b0b; border:3px solid #0b0b0b; font-weight:800; transform:rotate(1.5deg)}
+
+  nav{background:#0b0b0b; border-bottom:3px solid var(--accent); box-shadow:none}
+  nav a{color:var(--ink); border-bottom-width:4px; border-radius:10px 10px 0 0}
+  nav a:hover,nav a:focus{color:#0b0b0b; background:var(--accent); border-color:var(--accent)}
+
+  .section-head{border-left:8px solid var(--brand); padding-left:16px}
+  .section-head h2{display:inline; background:linear-gradient(transparent 62%, rgba(255,214,10,.55) 62%)}
+  .section-head h2::before{margin-right:.3em}
+  #intro .section-head h2::before{content:"👋"}
+  #lld .section-head h2::before{content:"🗣️"}
+  #foundations .section-head h2::before{content:"🧪"}
+  #assessment .section-head h2::before{content:"📝"}
+  #culture .section-head h2::before{content:"🌎"}
+  #reflection .section-head h2::before{content:"💡"}
+  .section-head .code{color:var(--accent); font-weight:700; margin-top:10px}
+
+  h3.sub{display:inline-block; background:var(--accent); color:#0b0b0b; padding:6px 16px; border-radius:999px;
+         transform:rotate(-1.2deg); font-size:.95rem; letter-spacing:.05em}
+
+  .lead{background:var(--surface); border:3px dashed var(--brand); border-radius:var(--radius)}
+  .card{background:var(--surface); border:3px solid var(--brand); border-radius:var(--radius);
+        box-shadow:6px 6px 0 var(--accent); transition:transform .15s ease, box-shadow .15s ease}
+  .card:nth-child(even){border-color:var(--accent); box-shadow:6px 6px 0 var(--brand)}
+  .card:hover{transform:translate(-3px,-3px) rotate(-.4deg); box-shadow:10px 10px 0 var(--accent)}
+  .card:nth-child(even):hover{box-shadow:10px 10px 0 var(--brand)}
+  .tag{background:var(--accent); color:#0b0b0b; font-weight:800; transform:rotate(-2deg)}
+  .tag.project{background:var(--brand); color:#0b0b0b}
+
+  details{border-top:2px dotted var(--line)}
+  summary{color:var(--accent); font-weight:800}
+  th{background:var(--brand); color:#0b0b0b; border-color:#0b0b0b}
+  td{border-color:var(--line)}
+  blockquote{border-left-color:var(--accent); background:var(--tint)}
+  figure.shot img{border:3px solid var(--accent); border-radius:14px}
+  footer{border-top:3px solid var(--accent); color:var(--muted)}
+  @media (prefers-reduced-motion: reduce){ .card,.card:hover{transition:none; transform:none} html{scroll-behavior:auto} }
+
+  @media print{ nav,.skip{display:none} .hero{background:none; color:#000} details{display:block} }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <img class="avatar" src="images/profile.jpg" alt="Photo of Mary Jade S. Salvador" onerror="this.remove()">
+  <div class="eyebrow">CLAD Through CTEL Portfolio</div>
+  <h1>Mary Jade S. Salvador</h1>
+  <p>The University of California San Diego Division of Extended Studies</p>
+  <p class="meta">EL00003760 · CTEL Portfolio · October 2026</p>
+  <span class="badge">Middle School Science · Oakland, California</span>
+</header>
+
+<nav aria-label="Portfolio sections">
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#lld">Language &amp; Language Development</a></li>
+    <li><a href="#foundations">Foundations &amp; Methods</a></li>
+    <li><a href="#assessment">Assessment of English Learners</a></li>
+    <li><a href="#culture">Culture &amp; Inclusion</a></li>
+    <li><a href="#reflection">Final Reflection</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+<!-- INTRODUCTION -->
+<section id="intro">
+  <div class="section-head"><h2>Introduction</h2></div>
+  <div class="lead">
+    <p>This portfolio presents my professional journey, learning experiences, and growth as an educator through the CLAD Through CTEL program. It highlights the knowledge and teaching strategies I have gained to better support English Learners and create an inclusive learning environment.</p>
+    <p>I have nine years of teaching experience, including eight years in the Philippines and my current year as a J-1 exchange teacher in the United States. I earned my Bachelor’s degree in Education from Colegio de San Juan de Letran and completed my master’s degree in the Philippines. My educational background and teaching experience have helped me develop a strong commitment to providing quality education and supporting students with diverse learning needs.</p>
+    <p>As a new teacher in the United States, I have encountered new experiences and challenges, particularly in teaching students from different cultural and linguistic backgrounds. The California Teachers of English Learners (CTEL) program, which leads to the California English Learner Authorization (CLAD), has helped me develop a deeper understanding of English language development and effective instructional strategies. Through this program, I have gained valuable knowledge that I can apply to make lessons more accessible, encourage student participation, and create an inclusive learning environment.</p>
+    <p>I believe that professional development in English Learner education is essential for educators because it equips them with the knowledge and skills to address students’ language and academic needs. The program has strengthened my teaching practices and inspired me to continue growing professionally to ensure that all students receive meaningful learning opportunities and the support they need to succeed.</p>
+  </div>
+</section>
+
+<!-- COURSE 1 -->
+<section id="lld">
+  <div class="section-head"><h2>Language and Language Development</h2><div class="code">Course 1</div></div>
+  <div class="lead">
+    <p><strong>Course description.</strong> Language and Language Development focuses on understanding how language works, including its systems, structures, forms, and uses in speaking and writing. The course explores how language differences, communication, and social interactions affect English Learners. It also provides strategies for assessing and teaching English Learners while addressing the language challenges they may face. In addition, the course examines how cultural, social, and political factors influence second-language learning and development.</p>
+  </div>
+
+  <h3 class="sub">Discussion Board</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Discussion 1</span>
+      <h4>Critical Period Hypothesis</h4>
+      <p>Children hold a real edge in pronunciation and native-like speech, drawing on my own bilingual Filipino–English upbringing. Adults, however, can learn grammar quickly when it is taught directly, which led me to favor a “sensitive period” over a strict deadline.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 2</span>
+      <h4>BICS and CALP in My Science Classroom</h4>
+      <p>Cummins’ distinction reminds me not to equate conversational fluency with academic readiness. Visuals, sentence frames, and structured talk build academic language while home languages stay valued as assets.</p>
+      <details><summary>Read the full response</summary>
+        <p>One linguistic theory that will help me better serve linguistically and culturally diverse students is Jim Cummins' distinction between Basic Interpersonal Communication Skills (BICS) and Cognitive Academic Language Proficiency (CALP). Cummins explains that English learners often develop conversational English within a few years, while academic English, the language needed for reading, writing, and understanding complex classroom content, can take five to seven years or more to develop (Cummins, 2008). This reminds me not to equate conversational fluency with academic readiness.</p>
+        <p>In my middle school science classroom, this theory encourages me to provide language supports such as visuals, sentence frames, graphic organizers, and structured discussions while maintaining high academic expectations. It also reinforces the importance of valuing students' home languages as assets that support learning. By recognizing the difference between social and academic language, I can create a more equitable learning environment where English learners can successfully develop both language proficiency and content knowledge.</p>
+        <p><em>Cummins, J. (2008). BICS and CALP: Empirical and theoretical status of the distinction. In B. Street &amp; N. H. Hornberger (Eds.), Encyclopedia of language and education: Vol. 2. Literacy (2nd ed., pp. 71–83). Springer.</em></p>
+      </details>
+    </article>
+  </div>
+
+  <h3 class="sub">Assignments</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Assignment 1A</span>
+      <h4>History of Bilingual Education and the Williams Decision</h4>
+      <p>Traces dual-language instruction from the nation’s founding through Lau v. Nichols (the right to language support) and Williams v. California (qualified teachers, safe schools, and quality materials), and what both mean for English Learners.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 1B</span>
+      <h4>Background Knowledge and Learning Styles</h4>
+      <p>Describes how I activate prior knowledge in 8th grade science, using an anticipation guide on air quality and asthma followed by a “four corners” discussion, and how I engage multiple intelligences and VAK learning styles through diagrams, academic conversation, and hands-on experiments.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 2A</span>
+      <h4>Analysis of McWhorter’s <em>The Power of Babel</em></h4>
+      <p>Explores the five processes of language change, why “dialect” versus “language” is a political distinction, the stew model of languages, and hybrids like Spanglish, Denglisch, Konglish, and Taglish.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 2B</span>
+      <h4>Vygotsky’s Zone of Proximal Development and Grouping</h4>
+      <p>Explains how the ZPD shapes pairing and grouping decisions. My science lab-team routine uses rotating roles and requires talk before writing, supported by the frame “The data show ___, which supports the claim that ___.”</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 3A</span>
+      <h4><em>Power of Babel</em> Prompts 7–12</h4>
+      <p>Short analytical responses on pidgins and creoles, tone, evidentiary markers, Mandarin syllable tones, sign languages as full natural languages, and the history of the double negative.</p>
+    </article>
+    <article class="card wide">
+      <span class="tag">Assignment 3B</span>
+      <h4>Scaffolding and Academic Language: The Cognate and Reasoning Organizer</h4>
+      <p>A graphic organizer I created to teach common academic words using Spanish cognates and sentence frames, built on Kinsella’s three-step vocabulary sequence (introduce, check understanding, apply independently).</p>
+      <details><summary>See the organizer</summary>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Word</th><th>Simple meaning</th><th>Spanish cognate</th><th>Sentence frame</th><th>My sentence</th></tr></thead>
+          <tbody>
+            <tr><td>JUSTIFY</td><td>Gives reasons for an answer</td><td>justificar</td><td>I justified my answer by ___</td><td></td></tr>
+            <tr><td>ANALYZE</td><td>Look closely at the parts</td><td>analizar</td><td>When I analyze ____, I see _____.</td><td></td></tr>
+            <tr><td>COMPARE</td><td>Tell how two things are alike</td><td>comparar</td><td>____ is like ______ because _____</td><td></td></tr>
+            <tr><td>ESTIMATE</td><td>Make smart guesses</td><td>estimar</td><td>I estimate that _______</td><td></td></tr>
+            <tr><td>SIGNIFICANT</td><td>Big or important</td><td>significativo</td><td>A significant change was _____</td><td></td></tr>
+            <tr><td>(New word)</td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p>Teachers must always check a cognate before teaching it, since some words only look alike (Kinsella, 2005).</p>
+      </details>
+    </article>
+  </div>
+
+  <h3 class="sub">Final Projects</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag project">Final Project 1</span>
+      <h4>Case Study of an English Learner</h4>
+      <p>An asset-based profile of a fluent Spanish–English bilingual eighth grader (identifying details omitted). Using assessment data, classroom observation, and teacher input, the study interprets phonological, pragmatic, and cultural factors through BICS and CALP and recommends sentence frames, modeling, and structured discussion to strengthen academic reasoning.</p>
+    </article>
+    <article class="card">
+      <span class="tag project">Final Project 2</span>
+      <h4>Literal vs. Intended Meaning: <em>Amelia Bedelia Goes Camping</em></h4>
+      <p>A pragmatic analysis of Amelia’s literal readings of idioms such as “pitch a tent,” viewed through communicative competence (Canale &amp; Swain) and BICS/CALP, with implications for teaching figurative language to English Learners.</p>
+    </article>
+    <article class="card">
+      <span class="tag project">Final Project 3</span>
+      <h4>Language, Identity, and Code-Switching</h4>
+      <p>Connects McWhorter’s 2019 article on code-switching with <em>The Power of Babel</em>, arguing that dialects are legitimate systems and that judgments about speech often reflect attitudes about race and status.</p>
+    </article>
+    <article class="card">
+      <span class="tag project">Final Project 4</span>
+      <h4>Mini-Lesson Plan: Genetic Inheritance</h4>
+      <p>A science lesson combining two strategies from <em>The ELL Teacher’s Toolbox</em>, Strip Story and Jigsaw, so students use reading, writing, speaking, and listening to explain how traits are inherited.</p>
+      <details><summary>Lesson at a glance</summary>
+        <ul class="tight">
+          <li><strong>Level:</strong> Intermediate English Learners (secondary)</li>
+          <li><strong>Strip Story (15 min):</strong> students each hold one sentence about inheritance, then order them using first, next, then, and finally.</li>
+          <li><strong>Jigsaw (30 min):</strong> expert groups master one of four sections (genes and chromosomes, dominant and recessive traits, Punnett squares, inherited traits in humans) and teach their home groups.</li>
+          <li><strong>Exit ticket:</strong> 3–4 sentences using at least two sequence or cause-and-effect words, read aloud to a partner.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+</section>
+
+<!-- COURSE 2 -->
+<section id="foundations">
+  <div class="section-head"><h2>Foundations and Methods of English Language/Literacy Development and Content Instruction</h2><div class="code">Course 2 · 196284</div></div>
+  <div class="lead">
+    <p><strong>Course description.</strong> This course focuses on research-based theories of how students learn a second language and develop reading and writing skills. It explores the differences between first and second language learning and the effects of cognitive, language, cultural, and emotional factors on students from diverse backgrounds. It also teaches how to use ELPAC or CELDT results to plan lessons that support English language development and academic success. In addition, the course introduces effective teaching strategies through English Language Development (ELD), Content-Based ELD, and Specially Designed Academic Instruction in English (SDAIE) to make lessons easier for English Learners to understand.</p>
+  </div>
+
+  <h3 class="sub">Discussion Board</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Discussion 1</span>
+      <h4>A Positive, Effective Classroom Environment</h4>
+      <p>Respect, inclusion, and collaboration: dual-language materials, bilingual pairings, visuals, gestures, positive reinforcement, and extra processing time to keep anxiety low. Drawing on my ESL background, I stress getting to know each student and not rushing responses.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 2</span>
+      <h4>Motivation Through Simulation</h4>
+      <p>In an 8th grade unit on reproduction within natural selection, students run an Amplify simulation independently, then share results on the projector. Differing outcomes spark comparison and discussion.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 3</span>
+      <h4>Previewing My SIOP Sequence</h4>
+      <p>A three-lesson theme on how traits change over time and affect survival, with simulations, Claim-Evidence-Reasoning, body-structure analysis, and bilingual support. My favorite teaching quote is Allan Bloom’s: “Education is the movement from darkness to light.”</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Assignments</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Assignment 1</span>
+      <h4>Requirements for Reclassification</h4>
+      <p>How Lodestar identifies English Learners (Home Language Survey and initial ELPAC) and the criteria for reclassification to Fluent English Proficient: ELPAC performance, teacher evaluation, parent consultation, and comparison of basic skills.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 2</span>
+      <h4>ESSA in Practice</h4>
+      <p>A summary and evaluation of the Every Student Succeeds Act, covering its shift of control to states, uneven results, the risk of inequity between states, and my own observations of budget changes.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">SIOP Lesson Plans · Grade 8 Science</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">SIOP Day 1</span>
+      <h4>Traits Affect the Number of a Population</h4>
+      <p>Students predict which fur traits help survival in a cold environment, then use the Natural Selection simulation to see how mutations introduce adaptive and non-adaptive traits. Think-Pair-Share, CER, bilingual slides, and a bilingual cloze assessment support English Learners.</p>
+      <figure class="shot"><img src="images/siop-day1.jpg" alt="Natural Selection simulation screenshot" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Natural Selection simulation</figcaption></figure>
+    </article>
+    <article class="card">
+      <span class="tag">SIOP Day 2</span>
+      <h4>How Paleontologists Observe Body Structures</h4>
+      <p>As student paleontologists, groups sort species cards by shared body structures and justify their groupings in a presentation, with Spanish vocabulary and bilingual partner pairings.</p>
+      <figure class="shot"><img src="images/siop-day2.jpg" alt="Species cards used in the sorting activity" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Species cards</figcaption></figure>
+    </article>
+    <article class="card">
+      <span class="tag">SIOP Day 3</span>
+      <h4>Front Limbs: Same Parts, Different Functions</h4>
+      <p>Using sentence frames, visual scaffolds, and a structure–function–environment organizer, students compare limbs of a dire wolf, fruit bat, and Titanotylopus, then share findings in a gallery walk and whole-class discussion.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Worksheet</span>
+      <h4>Natural Selection Crossword Puzzle</h4>
+      <p>A grade-level vocabulary puzzle in English with a Spanish version for English Learners, covering terms such as trait, generation, distribution, population, variation, and prediction.</p>
+      <figure class="shot"><img src="images/crossword.jpg" alt="Natural selection crossword puzzle worksheet" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Crossword puzzle worksheet</figcaption></figure>
+    </article>
+  </div>
+
+  <h3 class="sub">Final Project</h3>
+  <div class="grid">
+    <article class="card wide">
+      <span class="tag project">Reflection: Teach Now</span>
+      <h4>Evolution Lesson Sequence</h4>
+      <p>A reflection on teaching the three-day sequence. Visuals, hands-on work, bilingual buddies, and repeated academic vocabulary supported English Learners. Next steps: more frequent formative checks (exit tickets, mini whiteboards, thumbs up/down), explicit modeling of CER responses, more labeled diagrams, and better time management so English Learners have time to process and respond.</p>
+    </article>
+  </div>
+</section>
+
+<!-- COURSE 3 -->
+<section id="assessment">
+  <div class="section-head"><h2>Assessment of English Learners</h2><div class="code">Course 3 · 198481</div></div>
+  <div class="lead">
+    <p><strong>Course description.</strong> Assessment of English Learners focuses on how to assess and support English learners based on academic standards. It teaches how to identify students’ strengths and areas for improvement in English language development, literacy, and academic performance. The course covers different types of assessments, including formative and summative assessments, and how teachers can use the results to plan lessons that meet students’ needs. It also explains how to monitor students’ progress and understand the importance of reliable and fair assessments that consider students’ different cultural and language backgrounds.</p>
+  </div>
+
+  <h3 class="sub">Discussions</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Discussion 1</span>
+      <h4>ELPAC Assessments and Validity</h4>
+      <p>After administering the ELPAC for the first time, I examined a Speaking item that asks students to describe a science-lab scene. Its reliance on lab vocabulary can measure prior exposure rather than English proficiency, which raises a validity concern.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 2</span>
+      <h4>ELA/ELD Framework, Rigor, and Higher-Order Thinking</h4>
+      <p>How literacy demands have changed my science teaching, where I am with Bloom’s Taxonomy and Webb’s Depth of Knowledge, and the professional development I want: integrated ELD in science, leveled sentence frames, and culturally and linguistically responsive practice.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 3</span>
+      <h4>Differentiation and Formative Assessment</h4>
+      <p>Differentiation without extra planning: tiered questioning, choice boards, flexible grouping, sentence frames, and quick checks such as exit tickets and thumbs up/sideways/down.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Assignments</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Assignment 1</span>
+      <h4>ELPAC Presentation</h4>
+      <p>A PowerPoint explaining the ELPAC: its purpose, assessment types, testing timeline, performance levels, and scoring, and how teachers use results for differentiation, scaffolding, progress monitoring, and reclassification.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 2</span>
+      <h4>Vignette 6.5: Freedom of Speech</h4>
+      <p>An analysis of an integrated ELA, ELD, and history lesson for Grade 8: learning targets, ELD standards, questions mapped to Bloom’s and Webb’s levels, and the scaffolds used, including layered reading, pre-taught vocabulary, and jigsaw collaboration.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Assignment 3</span>
+      <h4>Key Concepts of the California ELD Standards</h4>
+      <p>Summaries of the purpose of the proficiency level descriptors, the role of home language, the three stages (Emerging, Expanding, Bridging), the three modes of communication, and the difference between integrated and designated ELD.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Final Project</h3>
+  <div class="grid">
+    <article class="card wide">
+      <span class="tag project">Lesson Plan</span>
+      <h4>Differentiation and Formative Assessment: Kinetic and Potential Energy</h4>
+      <p>A 55-minute 8th grade physical science lesson for Emerging, Expanding, and Bridging English Learners, with a ball drop and pendulum demonstration, three lab stations, an energy-transformation diagram, and a turn-and-talk. It is aligned to CA ELD Standards Parts I and II, with Bloom’s-level questions, leveled sentence frames, and three formative checks.</p>
+      <details><summary>Lesson at a glance</summary>
+        <ul class="tight">
+          <li><strong>Content objective:</strong> explain kinetic and potential energy, identify real-world examples, and describe how energy converts as height and speed change.</li>
+          <li><strong>Language objective:</strong> describe the connection orally and visually using academic vocabulary and cause-and-effect sentence frames.</li>
+          <li><strong>Differentiation:</strong> realia and picture cards, mixed-proficiency pairs, frames by level, and drawing, gestures, or short spoken answers as ways to show learning.</li>
+          <li><strong>Formative assessment:</strong> quick-draw whiteboard check, turn-and-talk with sentence frames, and an exit ticket sorted into “got it,” “getting there,” and “not yet.”</li>
+        </ul>
+        <blockquote>“When the ball is at the top, it has ______ energy because ______.”</blockquote>
+      </details>
+    </article>
+  </div>
+</section>
+
+<!-- COURSE 4 -->
+<section id="culture">
+  <div class="section-head"><h2>Culture and Inclusion</h2><div class="code">Course 4</div></div>
+  <div class="lead">
+    <p><strong>Course description.</strong> The Culture and Inclusion course focuses on understanding different cultures and how cultural diversity affects students’ learning and academic success. It explores how to develop, implement, and evaluate teaching practices that respect and include different cultural backgrounds. Topics include cultural perspectives, interactions between cultures, diversity in California and the United States, the role of culture in schools and classrooms, creating inclusive learning environments, involving families and communities, and developing culturally responsive curriculum and instruction.</p>
+  </div>
+
+  <h3 class="sub">Discussion Board</h3>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Discussion 1</span>
+      <h4>Developing a Global Identity</h4>
+      <p>Two strategies: include diverse perspectives, histories, and contributions (we celebrate Black History Month, Filipino-American Culture and History Month, and Hispanic Heritage), and use collaborative activities like Think-Pair-Share that build empathy and belonging.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 2</span>
+      <h4>Eight Characteristics of the Multicultural School</h4>
+      <p>A rating of my school site on each characteristic, supported with examples such as a cross-subject expeditionary project, bilingual resources, and interpreters for family meetings.</p>
+      <details><summary>See the ratings</summary>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Characteristic</th><th>Rating (1–5)</th></tr></thead>
+          <tbody>
+            <tr><td>High Expectations</td><td>5</td></tr>
+            <tr><td>Curriculum</td><td>5</td></tr>
+            <tr><td>Teaching Styles</td><td>5</td></tr>
+            <tr><td>Language</td><td>4</td></tr>
+            <tr><td>Materials</td><td>4</td></tr>
+            <tr><td>Assessments</td><td>5</td></tr>
+            <tr><td>Culture</td><td>5</td></tr>
+            <tr><td>Counselors</td><td>5</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </details>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 3</span>
+      <h4>The Time Cost of Bilingual Materials</h4>
+      <p>Creating accurate dual-language science materials is time-consuming, especially for a new teacher. Colleague review, shared templates, reliable translation tools, and professional development time can help.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Discussion 4</span>
+      <h4>One Major Change for My School Site</h4>
+      <p>Consistent, structured language support across all content areas: language objectives, vocabulary instruction with translation, sentence frames, visuals, and structured discussion, with home language treated as a resource.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Reflective Essay</h3>
+  <div class="grid">
+    <article class="card wide">
+      <span class="tag">Essay</span>
+      <h4>Culture and Education</h4>
+      <p><strong>My perspective:</strong> culture and education are inseparable; engagement rises when lessons connect to students’ backgrounds. <strong>New insight:</strong> equity is not identical treatment. It means providing the tools and opportunities each student needs, and culturally responsive teaching means including students’ cultures intentionally while keeping expectations high. <strong>Changes I will make:</strong> learn more about students’ cultures, keep high expectations with scaffolds, examine my own biases, engage families, and add collaborative learning.</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Final Project</h3>
+  <div class="grid">
+    <article class="card wide">
+      <span class="tag project">Proposal and Presentation</span>
+      <h4>Language Access and Family Engagement: Evaluating Communication Practices for Spanish-Speaking Families</h4>
+      <p>A PowerPoint evaluating my school’s use of interpreters and bilingual materials during events like student-led conferences, college tours, and community meetings. It proposes practical, teacher-based strategies to strengthen communication with Spanish-speaking families, even with limited resources.</p>
+    </article>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section id="reflection">
+  <div class="section-head"><h2>Final Reflection and Conclusion</h2></div>
+  <div class="lead reflection">
+    <p>Putting this portfolio together made me look back at how much I've changed as a teacher. When I started the program, I figured helping English Learners mostly meant teaching them vocabulary. I see it differently now. It also means paying attention to culture, identity, and whether students feel safe enough to speak up in class. Giving every student the same lesson isn't the same as giving every student a fair chance, and I didn't really get that before.</p>
+    <p>The lesson that stuck with me most is that a student can talk easily with friends and still struggle with academic language. Think of a kid who chats nonstop on the playground but can't follow multi-step directions or explain their thinking in class. I can't judge what a student needs just by hearing how they talk during recess. Pictures, graphic organizers, sentence frames, and group work help with this. They don't water down the lesson. They let students do the same learning as everyone else while their English catches up.</p>
+    <p>I also learned to stop treating home languages and cultures as problems to work around. When students feel their background is respected, they take more risks and share more. Their first language can help them make sense of new ideas, and their experiences can make class discussions better. That changed how I see my job. I'm not only teaching a language. I'm helping students feel good about who they are.</p>
+    <p>The Culture and Inclusion course and the Assessment of English Learners course taught me to respect differences and use test results to plan lessons. One score never tells the full story. A student might be strong in speaking and listening but still developing in writing, and I need to see that. Instead of focusing on what students can't do yet, I want to notice what they already do well and build from there. Assessment is only useful if it changes how I teach.</p>
+    <p>Every student learns differently, and this program made me more flexible and patient when I plan. Now I ask myself, "Who might struggle with this, and what can I change?" In PE, that means giving clear directions, demonstrating activities, using visual cues, and pairing students so they can help each other. PE is actually a great place for language learning because students can see, move, and practice together. I can teach words like "pass," "balance," and "aim" while students use them in real action, and teamwork gives them natural reasons to talk and make friends.</p>
+    <p>Overall, this program made me want to do better for all my students. Supporting English Learners takes ongoing learning and reflection, and I know I won't get everything right. I'll keep learning from my students, my coworkers, and my mistakes. My goal is a classroom where students from every language and cultural background feel welcome, valued, and confident that they can succeed.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mary Jade S. Salvador · CLAD Through CTEL Portfolio · University of California San Diego Division of Extended Studies</p>
+  <p><a href="#main">Back to top</a></p>
+</footer>
+</body>
+</html>
